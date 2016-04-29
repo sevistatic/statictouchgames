@@ -32,13 +32,13 @@
       </div>
     </div>
     <script>
-    $.ajax('../assets/data/narrative.json',{
-      dataType: 'json',
-      success: function( data ) {
-        var buttonText = data;
-        $("#column0").text( buttonText.button0 );
-        $("#column1").text( buttonText.butotn1 );
-      }
+      $.ajax('../assets/data/narrative.json',{
+        dataType: 'json',
+        success: function( data ) {
+          var buttonText = data;
+          $("#column0").text( buttonText.button0 );
+          $("#column1").text( buttonText.butotn1 );
+        }
       });
     </script>
   </body>
