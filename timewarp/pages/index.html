@@ -22,7 +22,7 @@
             success: function( data ) {
             var buttonText = data;
             var currentButton = 0;
-            $("#mainButton").onClick(function(event)
+            $("#mainButton").on('click', function(event)
               {
                 $("#mainButton").text( buttonText[currentButton++] );
               });
